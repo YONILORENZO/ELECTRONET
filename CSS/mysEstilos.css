@@ -1,0 +1,253 @@
+
+* {
+    box-sizing: border-box;
+}
+/*PONER CERO MARGIN Y PADDING A TODO EL DOCUMENTO*/
+* {
+        margin:0;
+        padding:0;
+ }
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+p, h2,  h3{
+    margin: 0;
+}
+p{
+  color: #0bd4d4;
+}
+/*PARA MODIFICAR EL TITULO DEL ENCABEZADO*/
+h1{
+    display: block;
+    color: aliceblue;
+    background: radial-gradient(#000000, rgb(201, 199, 199));
+    height:30px;
+    margin: 0;
+    text-align: center;
+}
+/*MODIFICAR EL TITULO DE LA SECTION PRINCIPAL*/
+h2{
+    display: block;
+    color: #f7f4f4;
+    width: 100%;
+    background: rgb(104, 103, 103); 
+    text-align: center;
+    font-size: 20px;
+    }
+    /*PARA MODIFICAR EL TITULO DE LA GALERIA*/
+h3{
+    display: block;
+    color: #f7f4f4;
+    width: 100%;
+    background: radial-gradient(#8a0707b7, rgb(65, 21, 21)); 
+    text-align: center;
+}
+/*SECTION PRINCIPAL*/
+#principal{
+    display: block;
+    background-image: url(../image/fondo.jpg);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+/*MODIFICACION DE ENCABEZADO*/
+header{
+	margin: 0;
+    height: 200px;
+    width: 100%;
+}
+/*MODIFICACION DE IMAGEN DE ENCABEZADO*/
+.headerimagen{
+    margin:0;
+    height: 200px;
+    
+}
+/*MODIFICACION DE ETIQUETA NAV PRINCIPAL*/
+nav {
+    overflow: hidden;
+	background-color: #161414;
+    margin-top:30.9px;
+    width: 100%;
+    
+}
+nav ul{
+    display:block;
+    
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the topnav links */
+nav ul li{
+    float: left;
+	display: block;
+    color: #f7f4f4;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+	
+	
+}
+nav ul li a{
+    	
+	font-size: 27px;
+	color: #f7f4f4;
+	text-decoration: none;
+    padding: 11px 10px;
+    background: linear-gradient(rgb(22, 21, 21) rgb(163, 151, 151))
+
+
+}
+
+/* Change color on hover */
+/*nav ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}*/
+nav ul li a.active {
+    background-color: #4CAF50;
+    color: rgb(252, 252, 252);
+    
+}
+
+nav ul li a:hover:not(.active) {
+    background-color: rgb(252, 252, 252);
+    color: rgb(0, 0, 0);
+}
+.ventaselectronicas{
+    display: block;
+    width: 500px;
+    height: 400px;
+    background:rgba(0, 217, 255, 0.9);
+    color: rgb(10, 10, 10);
+    
+    
+}
+/*MODIFICACION DE ARTICULO ENTRETENIMIENTO*/
+.entretenimiento{
+    display:block;
+    float: left;
+    left: 0;
+    margin-top: 0px;
+    width: 500px;
+    height: 400px;
+    background: rgba(251, 255, 0, 0.9);
+}
+/*MODIFICACION DE ARTICULO tutoriales*/
+.tutoriales{
+    display:block;
+    margin-left:0;
+    margin-top: 400px;
+    width: 500px;
+    height: 400px;
+    background: rgba(0, 255, 0, 0.9);
+
+}
+/*MODIFICACION DE ETIQUETA ASIDE PRINCIPAL*/
+aside{
+    display: block;
+    float: right;
+    margin-right: 0;
+    margin-top: -1200px;
+    width: 300px;
+    height: auto;
+    background: rgb(13, 135, 235);
+    border-radius: 12px;
+
+}
+footer{
+    display: block;
+    width: 100%;
+    height: 50px;
+    background: rgba(78, 78, 83);
+    margin: 0;
+}
+aside ul li a{
+    display: block;
+    background: rgb(0, 0, 0);
+    color:rgb(255, 254, 254);
+    padding: 16px 16px;
+    border-radius: 14px;
+    border: rgb(127, 208, 255); 
+    text-decoration: none;
+    margin: 0;
+    
+}
+aside ul li{
+    list-style: none;
+   }
+/*formulario para contacto*/
+.formulario{
+    display:block;  
+    background:rgb(56, 51, 51);
+    color:white;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    
+
+}
+
+
+@media screen and (max-width: 700px) {
+    /*PARA QUE EL MENU SE ADAPTE A LA PANTALLA*/
+    nav ul li{
+        display: flex;
+      float: none;
+	  width: 100%; 
+      background: rgb(10, 10, 10);
+      margin: 0;
+    }
+    nav ul li a{
+        display: inline;
+        width: 100%;
+        text-align: center;
+}
+    
+    nav ul{
+        
+        background: #f7f4f4;
+        width:100%;
+        
+    }
+    /*desactivar float de a menos de 700px*/
+    aside {
+        float: none;
+        margin: 0;
+        width: 100%;
+        border: 0;
+        
+        
+    }
+ 
+ .ventaselectronicas{
+     width: 100%;
+ }
+ .entretenimiento{
+     width: 100%;
+ }
+ .tutoriales{
+     width: 100%;
+ }
+ footer{
+     width: 100%;
+     height: 100%;
+ }
+ aside ul{
+     padding-left: 0;
+ }
+ aside ul li{
+ text-decoration: none;
+ margin: 0;
+}
+aside ul li a{
+    padding: 16px 8px;
+    margin: 0;
+    border: 3px solid gray;
+    border-radius: 10px;
+}
+
+}
